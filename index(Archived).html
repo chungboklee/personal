@@ -16,6 +16,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="img/branding/favicon.gif" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,6 +45,26 @@
 	</nav>
 	<!-- /Nav Bar -->
 
+		<!-- (Mobile)Top Navigation Menu -->
+		<nav class="topnav">
+			<a href="index.html" class="active">
+				<img src="img/branding/favicon.gif" width="16px" height="16px" style="margin-right:5px;">
+				Chung-bok, Lee
+			</a>
+			<div id="myLinks">
+				<a href="#">Page 1</a>
+				<a href="#">Page 2</a>
+				<a href="#">Page 3</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+
+	
+	<!-- /(Mobile)Top Navigation Menu -->
+
+
 <div class="container">
 	<h1>My First Bootstrap Page</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam scelerisque efficitur risus, quis aliquam diam interdum vel. Mauris faucibus dolor id quam molestie, elementum hendrerit est porta. Proin metus nisl, commodo vel suscipit nec, rutrum non odio. Aliquam ipsum nunc, mattis sit amet est quis, volutpat cursus lacus. Donec consectetur tortor non tristique auctor. Integer dui erat, mattis in augue sit amet, vestibulum dapibus leo. Sed ut est ex. Nunc rutrum, mauris vehicula maximus accumsan, lacus nisl finibus augue, quis dapibus odio erat at nisi. Donec venenatis mauris ut enim feugiat facilisis. Etiam ultricies maximus eros, id laoreet metus sagittis a. Praesent commodo sit amet nisi ac condimentum.
@@ -78,6 +100,17 @@
 		Fusce vel est non ipsum vehicula feugiat ac porta orci. Vivamus consequat risus a lorem iaculis blandit. Proin pulvinar mollis lacinia. Aliquam posuere rutrum nibh, ut semper mi tristique et. Etiam efficitur lobortis ligula, eu gravida massa auctor posuere. Nam quis tincidunt odio. Maecenas nec sapien quis ex condimentum posuere. Praesent mollis mollis orci at maximus. Ut consequat sit amet diam tincidunt aliquam. Fusce aliquam iaculis est eu congue. Praesent eget tempus augue. Aliquam vehicula purus vel vulputate elementum. Pellentesque consectetur nibh vitae odio laoreet, vitae tempus sem mollis. Donec at libero eget elit egestas lobortis.
 	</p>
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
 
